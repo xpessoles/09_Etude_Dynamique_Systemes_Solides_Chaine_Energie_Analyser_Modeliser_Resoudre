@@ -101,3 +101,72 @@
 
 ===============Finish Logging================
 
+
+===============Init Logging================
+
+23/11/2015 - 10:33:21 	===== Ouverture de session =====
+23/11/2015 - 11:08:51 	Début du calcul
+23/11/2015 - 11:08:51 	Nombre de positions : 1000
+23/11/2015 - 11:08:51 	Simulation inactivée
+23/11/2015 - 11:08:51 	Lecture des conditions initiales
+23/11/2015 - 11:08:53 	Fin du calcul
+23/11/2015 - 11:08:56 	Début du calcul
+23/11/2015 - 11:08:56 	Nombre de positions : 1000
+23/11/2015 - 11:08:56 	Simulation inactivée
+23/11/2015 - 11:08:56 	Lecture des conditions initiales
+23/11/2015 - 11:08:56 	Fin du calcul
+23/11/2015 - 11:09:09 	===== Fermeture de session =====
+
+===============Finish Logging================
+
+
+===============Init Logging================
+
+25/11/2015 - 11:16:11 	===== Ouverture de session =====
+25/11/2015 - 11:21:41 	Début du calcul
+25/11/2015 - 11:21:41 	Nombre de positions : 100
+25/11/2015 - 11:21:41 	Simulation inactivée
+25/11/2015 - 11:21:41 	Lecture des conditions initiales
+25/11/2015 - 11:21:41 	Fin du calcul
+25/11/2015 - 11:21:44 	Début du calcul
+25/11/2015 - 11:21:44 	Nombre de positions : 100
+25/11/2015 - 11:21:44 	Simulation activée
+25/11/2015 - 11:21:44 	Lecture des conditions initiales
+25/11/2015 - 11:21:45 	Fin du calcul
+25/11/2015 - 11:46:16 	===== Fermeture de session =====
+
+===============Finish Logging================
+
+
+===============Init Logging================
+
+25/11/2015 - 20:51:13 	===== Ouverture de session =====
+25/11/2015 - 20:54:13 	Début du calcul
+25/11/2015 - 20:54:13 	Nombre de positions : 100
+25/11/2015 - 20:54:13 	Simulation inactivée
+25/11/2015 - 20:54:13 	Lecture des conditions initiales
+25/11/2015 - 20:54:21 	Fin du calcul
+25/11/2015 - 20:54:38 	Début du calcul
+25/11/2015 - 20:54:38 	Nombre de positions : 100
+25/11/2015 - 20:54:38 	Simulation activée
+25/11/2015 - 20:54:38 	Lecture des conditions initiales
+25/11/2015 - 20:54:42 	Fin du calcul
+25/11/2015 - 20:54:46 	Début du calcul
+25/11/2015 - 20:54:46 	Nombre de positions : 100
+25/11/2015 - 20:54:46 	Simulation activée
+25/11/2015 - 20:54:46 	Lecture des conditions initiales
+25/11/2015 - 20:54:49 	Fin du calcul
+25/11/2015 - 20:54:56 	Début du calcul
+25/11/2015 - 20:54:56 	Nombre de positions : 100
+25/11/2015 - 20:54:56 	Simulation activée
+25/11/2015 - 20:54:56 	Lecture des conditions initiales
+25/11/2015 - 20:54:58 	Fin du calcul
+25/11/2015 - 21:21:43 	Début du calcul
+25/11/2015 - 21:21:43 	Nombre de positions : 100
+25/11/2015 - 21:21:43 	Simulation activée
+25/11/2015 - 21:21:43 	Lecture des conditions initiales
+25/11/2015 - 21:21:46 	Fin du calcul
+25/11/2015 - 22:03:11 	Début du calcul
+25/11/2015 - 22:03:11 	Nombre de positions : 100
+25/11/2015 - 22:03:11 	Simulation activée
+25/11/2015 - 22:03:11 	Lecture des conditions initiales
