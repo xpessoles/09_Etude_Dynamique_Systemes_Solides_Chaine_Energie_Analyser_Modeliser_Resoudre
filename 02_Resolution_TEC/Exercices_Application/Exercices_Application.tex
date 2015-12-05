@@ -87,7 +87,8 @@ Ch. * : ** -- \xxactivite%
 
 \section*{Exercice 1 -- Calcul de l'inertie équivalente d'un train épicycloïdal}
 \setcounter{subparagraph}{0}
-On considère le train épicycloïdal suivant à trois satellites. On donne l'inertie de chacune des pièces :
+
+On considère le train épicycloïdal suivant à trois satellites. Chacune des pièces est axisymétrique. On donne leurs matrices d'inertie :
 $$
 \overline{\overline{I_A}}(1/0) = 
 \begin{pmatrix} 
@@ -102,7 +103,9 @@ A_2 & 0 & 0 \\
 0 & B_2 & 0 \\
 0 & 0 & C_2 \\
 \end{pmatrix}
-\quad
+$$
+
+$$
 \overline{\overline{I_A}}(3/0) = 
 \begin{pmatrix} 
 A_3 & 0 & 0 \\
@@ -114,6 +117,8 @@ $$
 \begin{center}
 \includegraphics[width=.45\textwidth]{images/train_01}
 \end{center}
+
+On montre que : $\mu = \dfrac{\omega(2/0)}{\omega(1/0)}=-\dfrac{r_1}{2r_2}$ .
 
 \subparagraph{}
 \textit{Déterminer le rapport de réduction du train épicycloïdal.}
@@ -128,6 +133,7 @@ $$
 \item Exprimer le rapport de réduction cherché en fonction du  nombre de dents des solides. 
 \end{enumerate}
 \end{methode}
+
 
 \begin{minipage}[c]{.6\linewidth}
 On recherche $k=\dfrac{\omega(3/0)}{\omega(1/0)}$. 
@@ -148,6 +154,7 @@ Au final, $k = \dfrac{\omega(3/0)}{\omega(1/0)} = \dfrac{Z_1}{Z_1+Z_0}$.
 \begin{center}
 \includegraphics[width=\textwidth]{images/train_02}
 \end{center}
+
 \end{minipage}
 \end{corrige}
 \else
@@ -162,22 +169,128 @@ Au final, $k = \dfrac{\omega(3/0)}{\omega(1/0)} = \dfrac{Z_1}{Z_1+Z_0}$.
 \item On calcule $T(1/0)$, 
 \end{enumerate}
 \end{methode}
-\textbf{Calcul de l'énergie cinétique $T(1/0)$}
+\textbf{Calcul de l'énergie cinétique du planétaire : $T(1/0)$}
 
 Par définition, 
-$2T(1/0)=\left\{\mathcal{V}(1/0) \right\} \times \left\{\mathcal{C}(1/0) \right\} $
+$2T(1/0)=\left\{\mathcal{V}(1/0) \right\} \otimes \left\{\mathcal{C}(1/0) \right\} $
 $A$ étant un point fixe dans \textbf{0}, on a : 
 $$
-\left\{\mathcal{V}(1/0) \right\} = \torseurl{\vecto{1}{0}=\omega(1/0)\vect{z_0}}{\vectv{A}{1}{0}=\vect{0}}{A} \quad 
+\left\{\mathcal{V}(1/0) \right\} = \torseurl{\vecto{1}{0}=\omega(1/0)\vect{z_0}}{\vectv{A}{1}{0}=\vect{0}}{A}$$
+
+$$
 \left\{\mathcal{C}(1/0) \right\} 
 = \torseurl{M_1\vectv{G}{1}{0}}{\vect{\sigma \left( A\in 1/0\right)}=\overline{\overline{I}}\left( A,0\right) \vecto{1}{0}=C_1\omega(1/0)\vect{z}}{A}
 $$
+On a donc : 
+$$T(1/0)=\dfrac{1}{2} C_1 \omega(1/0)^2 $$
+
 \end{corrige}
+
+\begin{corrige}
+\textbf{Calcul de l'énergie cinétique du porte-satellite : $T(3/0)$}
+
+Par définition, 
+$2T(2/0)=\left\{\mathcal{V}(2/0) \right\} \otimes \left\{\mathcal{C}(2/0) \right\} $; on a : 
+$$
+\left\{\mathcal{V}(3/0) \right\} = \torseurl{\vecto{3}{0}=\omega(3/0)\vect{z_0}}{\vectv{A}{3}{0}=\vect{0}}{A}
+$$
+
+$$
+\left\{\mathcal{C}(3/0) \right\} 
+= \torseurl{M_3\vectv{G}{3}{0}}{\vect{\sigma \left( A\in 3/0\right)}=\overline{\overline{I}}\left( A,3\right) \vecto{3}{0}=C_3\omega(3/0)\vect{z}}{A}
+$$
+On a donc : 
+$$T(3/0)=\dfrac{1}{2} C_3 \omega(3/0)^2=\dfrac{1}{2} k^2 C_3 \omega(1/0)^2 $$
+
+
+\end{corrige}
+
+\begin{corrige}
+
+\textbf{Calcul de l'énergie cinétique d'un seul satellite : $T(2/0)$}
+
+Par définition, 
+$2T(2/0)=\left\{\mathcal{V}(2/0) \right\} \otimes \left\{\mathcal{C}(2/0) \right\} $ et le centre d'inertie d'un porte satellite est au point $B$ on a donc : 
+$$
+\left\{\mathcal{V}(2/0) \right\} = \torseurl{\vecto{2}{0}=\omega(2/0)\vect{z_0}}{\vectv{B}{2}{0}}{B} 
+$$
+
+$$
+\left\{\mathcal{C}(2/0) \right\} 
+= \torseurl{M_2\vectv{G}{2}{0}}{\vect{\sigma \left( A\in 2/0\right)}=\overline{\overline{I}}\left( A,2\right) \vecto{2}{0}=C_2\omega(2/0)\vect{z}}{A}
+$$
+
+$\vectv{B}{2}{0}= \vectv{B}{2}{3} + \vectv{B}{3}{0} = \vect{0}  + \vectv{A}{3}{0} + \vect{BA} \wedge \vecto{3}{0} = -R_3 \vect{x_3} \wedge \omega(3/0) \vect{z_0}= -R_3\omega(3/0)\vect{y_3} $.
+
+\begin{rem}
+Le vecteur $\vect{AB}$ est porté par le porte satellite. Par ailleurs, les points $A$, $B$ ainsi que les points de contact dans les engrenages sont toujours suivant la direction du porte satellite. 
+Enfin, $R_3=R_1+R_2$.
+\end{rem}
+D'où : 
+$$
+\left\{\mathcal{V}(2/0) \right\} = \torseurl{\vecto{2}{0}=\omega(2/0)\vect{z_0}}{\vectv{B}{2}{0}=-R_3\omega(3/0)\vect{y_3}}{B}  
+$$
+
+$$\left\{\mathcal{C}(2/0) \right\} 
+= \torseurl{M_2\vectv{G}{2}{0}=-R_3\omega(3/0)\vect{y_3}}{\vect{\sigma \left( A\in 2/0\right)}=C_2\omega(2/0)\vect{z}}{A}
+$$
+
+On a donc : 
+$$T(3/0)=\dfrac{1}{2} C_2 \omega(2/0)^2 + \dfrac{1}{2}M_2 R_3^2 \omega(3/0)^2 
+= \dfrac{1}{2} C_2 \dfrac{r_1^2}{4r_2^2}\omega(1/0)^2 + \dfrac{1}{2}M_2 R_3^2 k^2 \omega(1/0)^2
+=\dfrac{1}{2} C_2 \mu^2\omega(1/0)^2 + \dfrac{1}{2}M_2 R_3^2 \omega(3/0)^2 
+ $$
+
+
+\end{corrige}
+
+\begin{corrige}
+
+\textbf{Calcul de l'énergie cinétique de l'ensemble E: $T(E/0)$}
+
+Sans oublier qu'il y a 3 satellites (...), on a donc :
+$$T(E/0)=T(1/0)+T(2/0)+T(3/0) $$
+
+$$T(E/0) = \dfrac{3}{2} C_2 \dfrac{r_1^2}{4r_2^2}\omega(1/0)^2 + \dfrac{3}{2}M_2 R_3^2 k^2 \omega(1/0)^2 + \dfrac{1}{2} C_1 \omega(1/0)^2 + \dfrac{1}{2} k^2 C_3 \omega(1/0)^2
+$$
+D'où 
+$$T(E/0) = \dfrac{1}{2}\left( 3 C_2 \mu^2 + 3M_2 R_3^2 k^2 + C_1  +  k^2 C_3 \right)\omega(1/0)^2
+$$
+
+On note donc $J_{eq} = 3 C_2 \mu^2 + 3M_2 R_3^2 k^2 + C_1  +  k^2 C_3$ l'inertie équivalente du train épicycloïdal.
+\end{corrige}
+
+\begin{corrige}
+\begin{methode}
+\end{methode}
+\end{corrige}
+
+\begin{corrige}
+\textbf{Calcul des puissances externes}
+
+\textbf{Calcul des puissances dues aux actions de contact}
+
+\textbf{Puissance dissipée dans la liaison pivot entre 1 et 0 : $\mathcal{P}_{0\rightarrow 1}$ :} 
+
+
+On a : $\mathcal{P}_{0\rightarrow 1} = \torseurcin{V}{1}{0} \otimes \torseurstat{T}{1}{0}$
+$$
+\torseurcin{V}{1}{0} 
+= \torseurl{\vecto{1}{0}=\omega(1/0)\vect{z_0}}{\vectv{A}{1}{0}=\vect{0}}{A}  
+\quad 
+\torseurstat{T}{1}{0}
+= \torseurl{\vectf{1}{0}}{\vectm{A}{1}{0}=L_{01}\vect{x_0} + L_{01}\vect{y_0}}{A}  
+$$
+
+On a donc : $\mathcal{P}_{0\rightarrow 1} = 0$.
+
+\end{corrige}
+
 \else
 \fi
 
 
-
+%\end{multicols}
 \end{document}
 
 
